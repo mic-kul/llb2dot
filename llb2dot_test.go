@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/mic-kul/llb2dot"
 	"github.com/moby/buildkit/solver/pb"
-	"github.com/po3rin/llb2dot"
 )
 
 func TestLLB2Graph(t *testing.T) {

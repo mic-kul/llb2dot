@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/po3rin/llb2dot"
+	"github.com/mic-kul/llb2dot"
 )
 
 func main() {

@@ -10,7 +10,6 @@ require (
 	github.com/moby/buildkit v0.11.2
 	github.com/opencontainers/go-digest v1.0.0
 	github.com/pkg/errors v0.9.1
-	github.com/po3rin/llb2dot v0.1.0
 	github.com/urfave/cli v1.22.4
 	gonum.org/v1/gonum v0.0.0-20190314102406-9182d211c6c2
 )

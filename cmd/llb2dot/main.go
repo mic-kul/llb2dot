@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/po3rin/llb2dot"
+	"github.com/mic-kul/llb2dot"
 	"github.com/urfave/cli"
 )
 
