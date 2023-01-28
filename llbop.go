@@ -1,6 +1,7 @@
 package llb2dot
 
 import (
+	"context"
 	"io"
 	"io/ioutil"
 
@@ -67,14 +68,14 @@ func LoadDockerfile(r io.Reader) ([]LLBOp, error) {
 		return nil, err
 	}
 
-	state, _, err := dockerfile2llb.Dockerfile2LLB(appcontext.Context(), df, dockerfile2llb.ConvertOpt{
+	state, _, _, err := dockerfile2llb.Dockerfile2LLB(appcontext.Context(), df, dockerfile2llb.ConvertOpt{
 		MetaResolver: imagemetaresolver.Default(),
 	})
 	if err != nil {
 		return nil, err
 	}
 
-	def, err := state.Marshal()
+	def, err := state.Marshal(context.TODO())
 	if err != nil {
 		return nil, err
 	}
